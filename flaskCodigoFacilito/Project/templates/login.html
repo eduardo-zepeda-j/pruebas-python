@@ -1,0 +1,17 @@
+{%extends 'base/base.html'%}
+
+{%block content%}
+    {%from "_macro.html" import render_field%}
+    <form method = 'POST' id='loginForm' name='sentMessage' >
+        <input type="hidden" name = 'csrf_token', value="{{csrf_token()}}">
+        {{render_field(form.username, class='form-control')}}
+        
+        {{render_field(form.password, class='form-control')}}
+        
+       
+        <input type="submit" value="send form">
+    </form>
+    
+
+
+{%endblock%}

@@ -1,0 +1,17 @@
+{%extends 'base/base.html'%}
+
+{%block content%}
+    {%from "_macro.html" import render_field%}
+    <form method = 'POST' id='contactForm' name='sentMessage' >
+        {{render_field(form.username, class='form-control')}}
+        
+        {{render_field(form.email, class='form-control')}}
+        {{render_field(form.comment, class='form-control')}}
+        {{form.honeypot}}
+       
+        <input type="submit" value="send form">
+    </form>
+    
+
+
+{%endblock%}

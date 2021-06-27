@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>REPORTES</h1>
+    <h2>Fecha</h2>
+
+    <form method='get'>
+        <input type="date" name='date' id ='date'>
+        <input type="submit" value = 'Enviar Fecha'>
+    </form>
+
+    <h2>Codigo</h2>
+    <form method='get'>
+        
+        <input type="number" name ='code' id = 'code'>
+        <input type="submit" value = 'Enviar Codigo'>
+    </form>
+    <h2>Salida</h2>
+    <p>Fecha: {{date}}</p>
+    <p>Codigo: {{code}}</p>
+</body>
+</html>

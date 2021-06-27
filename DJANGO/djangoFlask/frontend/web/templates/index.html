@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FRONTEND</h1>
+    <h2>Enviar Info</h2>
+    <form method='POST' enctype='multipart/form-data'>
+    {%csrf_token%}
+    <input type ='file' name ='document' id = 'document'/>
+    <input type='submit' value = 'Enviar Archivo'/>
+    </form>
+    <h2>Recibir Info</h2>
+    <p>{{data}}</p>
+</body>
+</html>
